@@ -24,6 +24,7 @@
     . "password=g4Qv3ojRfVhovEhytps-SiioU7";
 $conn = new PDO($dsn);
 if ($conn->connect_errno) {
+	echo $conn->connect_errno;
 	die("Connection failed: " . $conn->connect_errno);
 }
 ?>

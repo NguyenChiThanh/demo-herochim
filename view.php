@@ -41,6 +41,4 @@ while($row = $result->fetch(PDO::FETCH_ASSOC) {
 } 
 	// close table
 echo "</table>";
-$result->closeCursor();
-$conn->close();
 ?>

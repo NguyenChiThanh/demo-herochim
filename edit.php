@@ -1,4 +1,5 @@
 <?php 
+include('connect-db.php');
 $id = $_POST['id'];
 $name = htmlspecialchars($_POST['name']);
 $year = htmlspecialchars($_POST['year']);

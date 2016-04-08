@@ -128,7 +128,7 @@
 		function loadAllData(callback) {
 			$.ajax({
 				url : "view.php",
-				type: "GET",
+				type: "POST",
 				success: function(data,status,xhr) {
 					$('.dataTable').html(data);
 					console.log(callback);

@@ -6,8 +6,8 @@ include('connect-db.php');
 	// get results from database
 $sql = "SELECT id, name, year FROM cars";
 $result = $conn->query($sql); 
-
-	// display data in table
+console.log($result );
+	// display d$result ata in table;
 echo "<h1><b>View All</b></h1>";
 
 echo "<table class='dataTable' border='1' cellpadding='10'>";

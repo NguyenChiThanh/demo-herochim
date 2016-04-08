@@ -14,7 +14,7 @@ echo "<table class='dataTable' border='1' cellpadding='10'>";
 echo "<tr> <th>ID</th> <th>Name</th> <th>Year</th> <th></th> <th></th></tr>";
 
 	// loop through results of database query, displaying them in the table
-while($row = $result->fetch(PDO::FETCH_ASSOC) {
+while($row = $result->fetch_assoc() {
 
 		// echo out the contents of each row into a table
 	?>

@@ -127,9 +127,10 @@
 		}
 		function loadAllData(callback) {
 			$.ajax({
-				url : "https://demo-herochim.herokuapp.com/view.php",
+				url : "view.php",
 				type: "GET",
-				success: function(data,status,xhr) {
+				dataType: "html",
+				success: function(data) {
 					$('.dataTable').html(data);
 					callback();
 				}

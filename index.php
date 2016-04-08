@@ -133,6 +133,9 @@
 				success: function(data) {
 					$('.dataTable').html(data);
 					callback();
+				},
+				error: function(data) {
+					alert("Cannot get data");
 				}
 			});
 		}

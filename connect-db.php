@@ -28,4 +28,7 @@ if (!$conn) {
 else {
 	echo "Hello World";
 }
+$sql = "SELECT id, name, year FROM cars";
+$result = $conn->query($sql);
+echo $result; 
 ?>

@@ -127,7 +127,7 @@
 		}
 		function loadAllData(callback) {
 			$.ajax({
-				url : "https://ec2-23-21-249-224.compute-1.amazonaws.com/view.php",
+				url : "https://demo-herochim.herokuapp.com/view.php",
 				type: "GET",
 				success: function(data,status,xhr) {
 					$('.dataTable').html(data);

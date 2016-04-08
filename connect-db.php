@@ -31,5 +31,6 @@ else {
 }
 $sql = "SELECT id, name, year FROM cars";
 $result = $conn->query($sql);
-echo $result;
+$row = $result->fetch(PDO::FETCH_ASSOC);
+echo $row['id'];
 ?>

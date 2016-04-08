@@ -4,10 +4,10 @@
  Allows PHP to connect to your database
 */
 
-$username = "root";
-$password = "";
-$hostname = "localhost";
-$dbname = "examples"; 
+$username = "xkykkiturabxci";
+$password = "t_e7xImfxDqeM9D_W3KKB6Yr3T";
+$hostname = "ec2-54-235-85-65.compute-1.amazonaws.com";
+$dbname = "dcjfe6jau3gtmf"; 
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $dbname);

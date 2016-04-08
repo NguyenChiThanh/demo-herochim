@@ -154,10 +154,13 @@
 					url : "new.php",
 					type: "POST",
 					data : myData,
-					success: function(data,status,xhr) {
+					success: function(data) {
 						$('.status').html(data);
 						clear();
 						loadAllData(init_events);
+					},
+					error: function(data) {
+						alert("Cannot get data");
 					}
 				});
 			}
@@ -167,10 +170,13 @@
 				url : "delete.php",
 				data: {"id":id},
 				type: "GET",
-				success: function(data,status,xhr) {
+				success: function(data) {
 					$('.status').html(data);
 					clear();
 					loadAllData(init_events);
+				},
+				error: function(data) {
+					alert("Cannot get data");
 				}
 			});		
 		}
@@ -186,10 +192,13 @@
 					url : "edit.php",
 					type: "POST",
 					data : myData,
-					success: function(data,status,xhr) {
+					success: function(data) {
 						$('.status').html(data);
 						clear();
 						loadAllData(init_events);
+					},
+					error: function(data) {
+						alert("Cannot get data");
 					}
 				});
 			}

@@ -12,5 +12,5 @@ if ($conn->query($sql_insert) === TRUE) {
 } else {
 	echo "Error: " . $sql_insert . "<br>" . $conn->error;
 }
-$conn->close();
+// $conn->close();
 ?>
